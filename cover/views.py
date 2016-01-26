@@ -7,6 +7,7 @@ def show(request):
 
 	data = Person.objects.all()
 	if len(data) > 0:
+
 		return render(request, 'cover/cvr.html',{'person': data[0]})
 	else:
 		return render(request, 'cover/empty.html',{})

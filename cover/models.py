@@ -12,9 +12,13 @@ class Person(models.Model):
 	address = models.CharField(max_length = 100)
 	city = models.CharField(max_length = 100)
 	profession = models.CharField(max_length = 100)
+	#url_background = models.CharField(max_length=100)
+
+
+	#def __str__ (self):
+
+	#	return self.first_name+ ' ' + self.last_name
+
+
 
 #Person.objetcs.create(first_name = 'a',last_name = 'b',email = 'c',cellphone = 'd',town = 'e',address = 'f',profession = 'g')
-class Page(models.Model):
-
-	Person = models.ForeignKey(Person, on_delete=models.CASCADE)
-	url_background = models.CharField(max_length = 100)

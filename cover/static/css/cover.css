@@ -35,6 +35,12 @@ ul {
   font-style: inherit;
 }
 
+body {
+  
+      background-image: url(http://www.vallourec-ra2013.com/assets/img/background/background-univ-petrole-degrade.png);
+  
+}
+
 a {
 
   text-decoration: none;
