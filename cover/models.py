@@ -14,3 +14,7 @@ class Person(models.Model):
 	profession = models.CharField(max_length = 100)
 
 #Person.objetcs.create(first_name = 'a',last_name = 'b',email = 'c',cellphone = 'd',town = 'e',address = 'f',profession = 'g')
+class Page(models.Model):
+
+	Person = models.ForeignKey(Person, on_delete=models.CASCADE)
+	url_background = models.CharField(max_length = 100)
